@@ -1,6 +1,7 @@
-# readme file for colourphon-rdf
+# colourphon-rdf
 
 A set of scripts that generate RDF for colour data.
 
-# requires
+# Requires
+
 Moriarty (see index.php for setting the correct path)

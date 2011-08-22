@@ -1,0 +1,125 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix colour: <http://data.colourphon.co.uk/def/colour-ontology#> .
+
+colour: a owl:ontology ;
+    rdfs:label "Colour Ontology" ;
+    rdfs:comment "Used to describe colours and their relationship to each other" .
+
+
+# Classes
+
+colour:Colour a rdfs:Class ;
+    rdfs:label "Colour" ;
+    rdf:comment "A thing which is a colour in some precise or abstract sense." ;
+    rdfs:isDefinedBy colour: .
+
+colour:NamedColour a rdfs:Class ;
+    rdfs:subClassOf colour:Colour ;
+    rdfs:label "Named Colour" ;
+    rdf:comment "A thing which is a colour and has been given a specific name." ;
+    rdfs:isDefinedBy colour: .
+
+colour:ColourScheme a rdfs:Class ;
+    rdfs:label "Colour Scheme" ;
+    rdfs:comment "Complementary colours together make a colour scheme." ;
+    rdfs:isDefinedBy colour: .
+
+colour:TriadicColourScheme a rdfs:Class ;
+    rdfs:subClassOf colour:ColourScheme ;
+    rdfs:label "Triadic Colour Scheme" ;
+    rdfs:comment "A Colour scheme in which two colours are equidistent to a third on a colour wheel. The third colour will be the subject of the triple that has a Triadic Colour Scheme as the value." ;
+    rdfs:isDefinedBy colour: .
+
+colour:ComplementaryColourScheme ;
+    rdfs:subClassOf colour:ColourScheme ;
+    rdfs:label "Complementary Colour Scheme" ;
+    rdfs:comment "A colour scheme in which two colours are directly opposite on a colour wheel." ;
+    rdfs:isDefinedBy colour: .
+
+colour:SplitComplementaryColourScheme ;
+    rdfs:subClassOf colour:ColourScheme ;
+    rdfs:label "Split Complementary Colour Scheme" ;
+    rdfs:comment "A colour scheme in which two colours are almost directly opposite a third on a colour wheel, but split by a number of degrees" ;
+    rdfs:isDefinedBy colour: .
+
+colour:AnalogousColourScheme ;
+    rdfs:subClassOf colour:ColourScheme ;
+    rdfs:label "Analogous Colour Scheme" ;
+    rdfs:comment "A colour scheme in which colours are next to each other on a colour wheel. Split by a number of degrees" ;
+    rdfs:isDefinedBy colour: .
+
+
+
+# Properties
+colour:colour a rdf:Property ;
+    rdfs:label "Colour" ;
+    rdfs:comment "something is related to this colour" ;
+    rdfs:range colour:Colour ;
+    rdfs:isDefinedby colour: .
+
+colour:colourScheme a rdf:Property ;
+    rdfs:label "Scheme" ;
+    rdfs:comment "Relates a colour to a colour scheme of which it is considered to be complementary" ;
+    rdfs:isDefinedby colour: .
+
+colour:shadeOf a rdf:Property ;
+    rdfs:label "Shade of" ;
+    rdfs:comment "Relates a colour to another colour of which it is considered to be a shade" ;
+    rdfs:domain colour:NamedColour ;
+    rdfs:range colour:NamedColour ;
+    rdfs:isDefinedby colour: .
+
+colour:describedAs a rdf:Property ;
+    rdfs:label "Described as" ;
+    rdfs:comment "A colour identified by its HEX value is described as being another named colour" ;
+    rdfs:domain colour:Colour ;
+    rdfs:range colour:NamedColour ;
+    rdfs:isDefinedBy colour: .
+
+colour:degrees a rdf:Property ;
+    rdfs:label "Degrees" ;
+    rdfs:comment "Number of degrees seperating colours in a colour scheme" ;
+    rdfs:isDefinedBy colour: .
+
+colour:red a rdf:Property ;
+    rdfs:label "red" ;
+    rdfs:comment "amount of red in the colour on a scale of 0 - 255" ;
+    rdfs:isDefinedBy colour: .
+
+colour:green a rdf:Property ;
+    rdfs:label "green" ;
+    rdfs:comment "amount of green in the colour on a scale of 0 - 255" ;
+    rdfs:isDefinedBy colour: .
+
+colour:blue a rdf:Property ;
+    rdfs:label "blue" ;
+    rdfs:comment "amount of blue in the colour on a scale of 0 - 255" ;
+    rdfs:isDefinedBy colour: .
+
+colour:lightness a rdf:Property ;
+    rdfs:label "lightness" ;
+    rdfs:comment "the lightness of the colour in percent" ;
+    rdfs:isDefinedBy colour: .
+
+colour:Hue a rdf:Property ;
+    rdfs:label "hue" ;
+    rdfs:comment "the hue of the colour in degrees" ;
+    rdfs:isDefinedBy colour: .
+
+colour:saturation a rdf:Property ;
+    rdfs:label "saturation" ;
+    rdfs:comment "the saturation of the colour in percent" ;
+    rdfs:isDefinedBy colour: .
+
+colour:hsl a rdf:Property ;
+    rdfs:label "HSL" ;
+    rdfs:comment "the HSL value of the colour" ;
+    rdfs:isDefinedBy colour: .
+
+colour:rgb a rdf:Property ;
+    rdfs:label "RGB" ;
+    rdfs:comment "the RGB value of the colour" ;
+    rdfs:isDefinedBy colour: .

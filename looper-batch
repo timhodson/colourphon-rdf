@@ -1,0 +1,31 @@
+#!/bin/bash
+
+php -f looper.php -- --red=0 --green=0 --blue=0 --red-max=09 --file=/mnt/colourphon/colour-1.nt >> looper-01.log &
+
+#php -f looper.php -- --red=10 --green=0 --blue=0 --red-max=19 --file=/mnt/colourphon/colour-2.nt  >> looper-02.log &
+#php -f looper.php -- --red=20 --green=0 --blue=0 --red-max=29 --file=/mnt/colourphon/colour-3.nt  >> looper-03.log &
+#php -f looper.php -- --red=30 --green=0 --blue=0 --red-max=39 --file=/mnt/colourphon/colour-4.nt  >> looper-04.log &
+#php -f looper.php -- --red=40 --green=0 --blue=0 --red-max=49 --file=/mnt/colourphon/colour-5.nt  >> looper-05.log &
+#php -f looper.php -- --red=50 --green=0 --blue=0 --red-max=59 --file=/mnt/colourphon/colour-6.nt  >> looper-06.log &
+#php -f looper.php -- --red=60 --green=0 --blue=0 --red-max=69 --file=/mnt/colourphon/colour-7.nt  >> looper-07.log &
+#php -f looper.php -- --red=70 --green=0 --blue=0 --red-max=79 --file=/mnt/colourphon/colour-8.nt  >> looper-08.log &
+#php -f looper.php -- --red=80 --green=0 --blue=0 --red-max=89 --file=/mnt/colourphon/colour-9.nt  >> looper-09.log &
+#php -f looper.php -- --red=90 --green=0 --blue=0 --red-max=99 --file=/mnt/colourphon/colour-10.nt  >> looper-10.log &
+
+#php -f looper.php -- --red=100 --green=0 --blue=0 --red-max=109 --file=/mnt/colourphon/colour-11.nt  >> looper-11.log &
+#php -f looper.php -- --red=110 --green=0 --blue=0 --red-max=119 --file=/mnt/colourphon/colour-12.nt  >> looper-12.log &
+#php -f looper.php -- --red=120 --green=0 --blue=0 --red-max=129 --file=/mnt/colourphon/colour-13.nt  >> looper-13.log &
+#php -f looper.php -- --red=130 --green=0 --blue=0 --red-max=139 --file=/mnt/colourphon/colour-14.nt  >> looper-14.log &
+#php -f looper.php -- --red=140 --green=0 --blue=0 --red-max=149 --file=/mnt/colourphon/colour-15.nt  >> looper-15.log &
+#php -f looper.php -- --red=150 --green=0 --blue=0 --red-max=159 --file=/mnt/colourphon/colour-16.nt  >> looper-16.log &
+#php -f looper.php -- --red=160 --green=0 --blue=0 --red-max=169 --file=/mnt/colourphon/colour-17.nt  >> looper-17.log &
+#php -f looper.php -- --red=170 --green=0 --blue=0 --red-max=179 --file=/mnt/colourphon/colour-18.nt  >> looper-18.log &
+#php -f looper.php -- --red=180 --green=0 --blue=0 --red-max=189 --file=/mnt/colourphon/colour-19.nt  >> looper-19.log &
+#php -f looper.php -- --red=190 --green=0 --blue=0 --red-max=199 --file=/mnt/colourphon/colour-20.nt  >> looper-20.log &
+#php -f looper.php -- --red=200 --green=0 --blue=0 --red-max=209 --file=/mnt/colourphon/colour-21.nt  >> looper-21.log &
+#php -f looper.php -- --red=210 --green=0 --blue=0 --red-max=219 --file=/mnt/colourphon/colour-22.nt  >> looper-22.log &
+#php -f looper.php -- --red=220 --green=0 --blue=0 --red-max=229 --file=/mnt/colourphon/colour-23.nt  >> looper-23.log &
+#php -f looper.php -- --red=230 --green=0 --blue=0 --red-max=239 --file=/mnt/colourphon/colour-24.nt  >> looper-24.log &
+#php -f looper.php -- --red=240 --green=0 --blue=0 --red-max=249 --file=/mnt/colourphon/colour-25.nt  >> looper-25.log &
+#php -f looper.php -- --red=250 --green=0 --blue=0 --red-max=255 --file=/mnt/colourphon/colour-26.nt  >> looper-26.log &
+

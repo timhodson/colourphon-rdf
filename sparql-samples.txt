@@ -1,0 +1,14 @@
+
+#Number of colours described as blue.
+prefix colour: <http://data.colourphon.co.uk/def/colour-ontology#>
+select count(?s) where {
+?s colour:describedAs <http://data.colourphon.co.uk/id/namedcolour/blue>
+}
+
+#get colour for patricuklar hex.
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix colour: <http://data.colourphon.co.uk/def/colour-ontology#>
+select ?s ?label where {
+<http://data.colourphon.co.uk/id/colour/0000e7> colour:describedAs ?s .
+?s rdfs:label ?label .
+}

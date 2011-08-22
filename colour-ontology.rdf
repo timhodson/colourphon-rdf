@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:colour="http://data.colourphon.co.uk/def/colour-ontology#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#">
+    <rdfs:label>Colour Ontology</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#">
+    <rdfs:comment>Used to describe colours and their relationship to each other</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#Colour">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#Colour">
+    <rdfs:label>Colour</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#Colour">
+    <rdf:comment>A thing which is a colour in some precise or abstract sense.</rdf:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#Colour">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#NamedColour">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#NamedColour">
+    <rdfs:subClassOf rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#Colour"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#NamedColour">
+    <rdfs:label>Named Colour</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#NamedColour">
+    <rdf:comment>A thing which is a colour and has been given a specific name.</rdf:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#NamedColour">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#ColourScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#ColourScheme">
+    <rdfs:label>Colour Scheme</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#ColourScheme">
+    <rdfs:comment>Complementary colours together make a colour scheme.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#ColourScheme">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#TriadicColourScheme">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#TriadicColourScheme">
+    <rdfs:subClassOf rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#ColourScheme"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#TriadicColourScheme">
+    <rdfs:label>Triadic Colour Scheme</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#TriadicColourScheme">
+    <rdfs:comment>A Colour scheme in which two colours are equidistent to a third on a colour wheel. The third colour will be the subject of the triple that has a Triadic Colour Scheme as the value.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#TriadicColourScheme">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#colour">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#colour">
+    <rdfs:label>Colour</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#colour">
+    <rdfs:comment>something is related to this colour</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#colour">
+    <rdfs:range rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#Colour"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#colour">
+    <rdfs:isDefinedby rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#colourScheme">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#colourScheme">
+    <rdfs:label>Scheme</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#colourScheme">
+    <rdfs:comment>Relates a colour to a colour scheme of which it is considered to be complementary</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#colourScheme">
+    <rdfs:isDefinedby rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#shadeOf">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#shadeOf">
+    <rdfs:label>Shade of</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#shadeOf">
+    <rdfs:comment>Relates a colour to another colour of which it is considered to be a shade</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#shadeOf">
+    <rdfs:domain rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#NamedColour"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#shadeOf">
+    <rdfs:range rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#NamedColour"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#shadeOf">
+    <rdfs:isDefinedby rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#describedAs">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#describedAs">
+    <rdfs:label>Described as</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#describedAs">
+    <rdfs:comment>A colour identified by its HEX value is described as being another named colour</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#describedAs">
+    <rdfs:domain rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#Colour"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#describedAs">
+    <rdfs:range rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#NamedColour"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#describedAs">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#degrees">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#degrees">
+    <rdfs:label>Degrees</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#degrees">
+    <rdfs:comment>Number of degrees seperating colours in a colour scheme</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#degrees">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#red">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#red">
+    <rdfs:label>red</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#red">
+    <rdfs:comment>amount of red in the colour on a scale of 0 - 255</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#red">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#green">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#green">
+    <rdfs:label>green</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#green">
+    <rdfs:comment>amount of green in the colour on a scale of 0 - 255</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#green">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#blue">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#blue">
+    <rdfs:label>blue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#blue">
+    <rdfs:comment>amount of blue in the colour on a scale of 0 - 255</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#blue">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#lightness">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#lightness">
+    <rdfs:label>lightness</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#lightness">
+    <rdfs:comment>the lightness of the colour in percent</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#lightness">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#Hue">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#Hue">
+    <rdfs:label>hue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#Hue">
+    <rdfs:comment>the hue of the colour in degrees</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#Hue">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#saturation">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#saturation">
+    <rdfs:label>saturation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#saturation">
+    <rdfs:comment>the saturation of the colour in percent</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#saturation">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#hsl">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#hsl">
+    <rdfs:label>HSL</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#hsl">
+    <rdfs:comment>the HSL value of the colour</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#hsl">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#rgb">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#rgb">
+    <rdfs:label>RGB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#rgb">
+    <rdfs:comment>the RGB value of the colour</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.colourphon.co.uk/def/colour-ontology#rgb">
+    <rdfs:isDefinedBy rdf:resource="http://data.colourphon.co.uk/def/colour-ontology#"/>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,12 @@
+# BEGIN colourphon-rdf
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /colourphon-rdf/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /colourphon-rdf/index.php [L]
+</IfModule>
+
+# END colourphon-rdf
+
